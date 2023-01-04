@@ -23,7 +23,6 @@ const Mainfeed: NextPage = () => {
             .from("articles")
             .select("*")
             .limit(10)
-            console.log(data)
             if (data != null) {
                 setArticles(data)
             }

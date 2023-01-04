@@ -3,6 +3,7 @@ import { useUser, useSupabaseClient } from "@supabase/auth-helpers-react"
 import { useRouter } from "next/router";
 import { Auth, ThemeSupa } from "@supabase/auth-ui-react";
 import { useState, useEffect } from "react";
+import CommentCard from "../../components/CommentCard";
 import { Spacer, Text, User, Button } from "@nextui-org/react";
 
 const Article: NextPage = () => {
@@ -68,6 +69,8 @@ const Article: NextPage = () => {
             </Button>
         </>
         : null}
+        <Spacer y={3} />
+        <CommentCard />
         </>
     )
 }

@@ -1,20 +1,31 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
-import { Spacer, Text } from '@nextui-org/react'
+import type {NextPage} from 'next';
+import {Nav} from '../components/navbar/navbar';
+import {Layout} from '../components/navbar/layout';
+import {Hero} from '../components/hero';
+import {Trusted} from '../components/trusted';
+import {Box} from '../components/styles/box';
+import {Features1} from '../components/features1';
+import {Features2} from '../components/features2';
+import {Features3} from '../components/features3';
+import {Testimonials} from '../components/tesminonials';
+import {Statistics} from '../components/statistics';
+import {Plans} from '../components/plans';
+import {Faq} from '../components/faq';
+import {Trial} from '../components/trial';
+import {Footer} from '../components/footer';
 
-const inter = Inter({ subsets: ['latin'] })
+const Home: NextPage = () => {
+   return (
+      <Layout>
+         <Box as="main">
+            <Hero />
+            <Features1 />
+            <Testimonials />
+            <Trial />
+            <Footer />
+         </Box>
+      </Layout>
+   );
+};
 
-export default function Home() {
-  return (
-   <>
-    <Text>The future of article sharing</Text>
-    <Spacer y={1}/>
-    <Text size="$lg">
-      Sharearticles allows you to create and share articles
-    </Text>
-   </>
-
-  )
-}
+export default Home;

@@ -14,6 +14,7 @@ const Login: NextPage = () => {
 
     return (
         <Auth 
+                providers={["google"]}
                 appearance={{theme: ThemeSupa}}
                 supabaseClient={supabaseClient}
         />

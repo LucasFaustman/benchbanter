@@ -21,6 +21,7 @@ const ArticleCard: NextPage<Props> = (props) => {
         return date.getDay() + '-' + date.getMonth() + '-' + date.getFullYear();
     }
     return (
+
         <Card
             isPressable
             css={{mb: "$10"}}

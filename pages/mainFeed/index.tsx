@@ -5,6 +5,7 @@ import { Auth, ThemeSupa } from "@supabase/auth-ui-react";
 import { useState, useEffect } from "react";
 import { Text } from "@nextui-org/react";
 import ArticleCard from "../../components/ArticleCard";
+import { Box } from "../../components/box";
 
 const Mainfeed: NextPage = () => {
     const supabaseClient = useSupabaseClient();
@@ -32,7 +33,7 @@ const Mainfeed: NextPage = () => {
     }
 
     return (
-        <>
+        <Box css={{ px: "$12", py: "$15", mt: "$12", "@xsMax": {px: "$10"}, maxWidth: "800px", margin: "0 auto" }}>
             <Text h2>Main Feed</Text>
             <Text size="$lg" css={{my: "$8"}}>
                 Check out articles here
@@ -41,7 +42,7 @@ const Mainfeed: NextPage = () => {
             {articles.map((article) => (
                 <ArticleCard article={article} />
             ))}
-        </>
+        </Box>
     )
 }
 

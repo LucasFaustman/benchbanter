@@ -17,9 +17,9 @@ export default function App({ Component, pageProps }: AppProps) {
       {/* allows our entire app constantly see the supabase sessuin */}
       <NextUIProvider>
         <Navbar />
-        <Box css={{ px: "$12", py: "$15", mt: "$12", "@xsMax": {px: "$10"}, maxWidth: "800px", margin: "0 auto" }}>
+        {/* <Box css={{ px: "$12", py: "$15", mt: "$12", "@xsMax": {px: "$10"}, maxWidth: "800px", margin: "0 auto" }}> */}
           <Component {...pageProps} />
-        </Box>
+        {/* </Box> */}
       </NextUIProvider>
   </SessionContextProvider>
   

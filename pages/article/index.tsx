@@ -5,6 +5,7 @@ import { Auth, ThemeSupa } from "@supabase/auth-ui-react";
 import { useState, useEffect } from "react";
 import CommentCard from "../../components/CommentCard";
 import { Spacer, Text, User, Button } from "@nextui-org/react";
+import { Box } from "../../components/box";
 
 const Article: NextPage = () => {
     const supabaseClient = useSupabaseClient();
@@ -46,7 +47,8 @@ const Article: NextPage = () => {
         }
     }
     return (
-        <>
+        <Box css={{ px: "$12", py: "$15", mt: "$12", "@xsMax": {px: "$10"}, maxWidth: "800px", margin: "0 auto" }}>
+
         <Text h2>{article.title}</Text>
         <Spacer y={.5}/>
         <User
@@ -71,7 +73,7 @@ const Article: NextPage = () => {
         : null}
         <Spacer y={3} />
         <CommentCard />
-        </>
+        </Box>
     )
 }
 

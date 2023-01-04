@@ -5,7 +5,7 @@ import { Auth, ThemeSupa } from "@supabase/auth-ui-react";
 import { Text, Textarea, Grid, Button } from "@nextui-org/react";
 import { withPageAuth } from "@supabase/auth-helpers-nextjs";
 import { useState } from "react";
-
+import { Box } from "../../components/box";
 
 const CreateArticle: NextPage = () => {
     const supabaseClient = useSupabaseClient();
@@ -43,6 +43,8 @@ const CreateArticle: NextPage = () => {
 
     }
     return (
+        <Box css={{ px: "$12", py: "$15", mt: "$12", "@xsMax": {px: "$10"}, maxWidth: "800px", margin: "0 auto" }}>
+
   <Grid.Container gap={1}>
       <Text h3>Title</Text>
       <Grid xs={12}>
@@ -73,6 +75,7 @@ const CreateArticle: NextPage = () => {
       </Grid>
       <Button onPress={createArticle}>Create Article</Button>
   </Grid.Container>
+  </Box>
     )
 }
 

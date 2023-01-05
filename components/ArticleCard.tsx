@@ -22,7 +22,7 @@ const ArticleCard: NextPage<Props> = (props) => {
     }
     return (
 
-        <Card
+        <Card key={article.id}
             isPressable
             css={{mb: "$10"}}
             onPress={() => router.push("/article?id=" + article.id)}

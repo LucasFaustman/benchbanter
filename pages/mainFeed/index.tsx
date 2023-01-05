@@ -15,22 +15,23 @@ const Mainfeed: NextPage = () => {
 
 
     useEffect(() => {
+        const getArticles = async () => {
+            try {
+                const {data,error} = await supabaseClient
+                .from("articles")
+                .select("*")
+                .limit(10)
+                if (data != null) {
+                    setArticles(data)
+                }
+            } catch(error: any) {
+                alert(error.message)
+            }
+        }
         getArticles();
     },[])
 
-    const getArticles = async () => {
-        try {
-            const {data,error} = await supabaseClient
-            .from("articles")
-            .select("*")
-            .limit(10)
-            if (data != null) {
-                setArticles(data)
-            }
-        } catch(error: any) {
-            alert(error.message)
-        }
-    }
+   
 
     return (
         <Box css={{ px: "$12", py: "$15", mt: "$12", "@xsMax": {px: "$10"}, maxWidth: "800px", margin: "0 auto" }}>
@@ -38,7 +39,6 @@ const Mainfeed: NextPage = () => {
             <Text size="$lg" css={{my: "$8"}}>
                 Check out articles here
             </Text>
-            {/* article card */}
             {articles.map((article) => (
                 <ArticleCard article={article} />
             ))}

@@ -9,7 +9,7 @@ const Login: NextPage = () => {
     const router = useRouter() //use supabase throughout components
 
     if (user) {
-        router.push("/mainfeed")
+        router.push("/mainFeed")
     }
 
     return (

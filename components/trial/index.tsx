@@ -14,7 +14,7 @@ export const Trial = () => {
             direction={'column'}
             align={'center'}
          >
-            <Text h3>Start your free trials</Text>
+            <Text h3>Start writing today</Text>
             <Text
                span
                css={{

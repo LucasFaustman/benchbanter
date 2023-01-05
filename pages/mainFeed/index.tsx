@@ -32,7 +32,6 @@ const Mainfeed: NextPage = () => {
     },[])
 
    
-
     return (
         <Box css={{ px: "$12", py: "$15", mt: "$12", "@xsMax": {px: "$10"}, maxWidth: "800px", margin: "0 auto" }}>
             <Text h2>Main Feed</Text>

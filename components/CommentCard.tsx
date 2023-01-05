@@ -35,7 +35,7 @@ const CommentCard = () => {
         if (typeof id !== undefined) {
             getComments()
         }
-    },[id])
+    },[id, comments])
 
     const intitialState = {
         comment: ""

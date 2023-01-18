@@ -29,7 +29,7 @@ const Mainfeed: NextPage = () => {
             }
         }
         getArticles();
-    },[articles])
+    },[articles, supabaseClient])
 
    
     return (

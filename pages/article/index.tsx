@@ -32,7 +32,7 @@ const Article: NextPage = () => {
         if (typeof id !== undefined) {
             getArticle()
         }
-    },[id,article])
+    },[id,article, supabaseClient])
 
     const deleteArticle = async () => {
         try {

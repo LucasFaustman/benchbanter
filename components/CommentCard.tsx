@@ -32,7 +32,7 @@ const CommentCard = () => {
         if (typeof id !== undefined) {
             getComments()
         }
-    },[id, comments])
+    },[id, comments, supabaseClient])
 
     const intitialCommentState = {
         comment: ""

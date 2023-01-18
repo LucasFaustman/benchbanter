@@ -1,3 +1,69 @@
+# FreeWrites - Online Article Sharing Platform
+
+Post your written articles and connect with other writers!
+
+Link to project: https://freewrites.onrender.com/
+
+<img src="https://media.giphy.com/media/HmZZ0B3Io0lIMLva17/giphy.gif" alt="free-writes overview" height="100%" />
+
+## How It's Made:
+
+**Tech used:**
+Tech used: Nest.js, PostgreSQL through Supabase, Next UI, TypeScript
+
+In this project, I wanted to practice my skills with TypeScript, Next.js, and PostgreSQL. I've always loved blogging, so I thought a simple online article sharing app would be a project to practice on!
+
+## Optimizations
+
+- Add pagination
+
+- Add thumbs up feature to articles and comments for users to vote on their favourite articles
+
+- Add a trending section for popular articles
+
+- Add friends section to filter your mainfeed with only posts from friends
+
+## Lessons Learned:
+
+Through this project, I was able to practice with TypeScript, Next.js, and PostgreSQL concepts, such as:
+
+- Writing select, insert, delete, update statements with PostgreSQL through Supabase
+
+- Passing props with TypeScript
+
+- How TypeScript can be used to avoid errors with type checking
+
+- How to use Next.js to easily create different routes
+
+- How I can use Next UI to very easily create a good looking user interface
+
+- ESLint is a great way to detect errors that could affect my app in the future
+
+
+## Examples
+
+Take a look at these other examples that I have in my portfolio:
+
+Travel-Buddi: https://github.com/LucasFaustman/travel-buddi
+
+Lucas Faustman Portfolio website: https://github.com/LucasFaustman/lucas-faustman-portfolio
+
+myPlayer.io: https://github.com/LucasFaustman/nba-Stat-Project
+
+Local Freelance Makeup Artist: https://github.com/LucasFaustman/local-makeup-artist-website
+
+My Small CRM: https://github.com/LucasFaustman/my-small-crm/tree/main
+
+BillTrackr: https://github.com/Ash1eyC0des/bill-trackr
+
+Memeify: https://github.com/LucasFaustman/memeify
+
+Machine Learning Brand Guesser: https://github.com/LucasFaustman/machine-brand-guesser
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

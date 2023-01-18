@@ -47,32 +47,32 @@ const Article: NextPage = () => {
         }
     }
     return (
-        <Box css={{ px: "$12", py: "$15", mt: "$12", "@xsMax": {px: "$10"}, maxWidth: "800px", margin: "0 auto" }}>
+        <Box key={article.id} css={{ px: "$12", py: "$15", mt: "$12", "@xsMax": {px: "$10"}, maxWidth: "800px", margin: "0 auto" }}>
 
-        <Text h2>{article.title}</Text>
-        <Spacer y={.5}/>
-        <User
-            name={article.user_email?.toLowerCase()}
-            size="md"
-            />
-        <Spacer y={1} />
-        <Text>
-            {article.content}
-        </Text>
-        {user && article.user_id === user.id ?
-        <>
-            <Spacer y={.5} />
-            <Button size="sm" onPress={() => router.push("/editArticle?id=" + id)}>
-                Edit
-            </Button>
-            <Spacer y={.5} />
-            <Button size="sm" color="error" onPress={() => deleteArticle()}>
-                Delete
-            </Button>
-        </>
-        : null}
-        <Spacer y={3} />
-        <CommentCard />
+            <Text h2>{article.title}</Text>
+            <Spacer y={.5}/>
+            <User
+                name={article.user_email?.toLowerCase()}
+                size="md"
+                />
+            <Spacer y={1} />
+            <Text>
+                {article.content}
+            </Text>
+            {user && article.user_id === user.id ?
+            <>
+                <Spacer y={.5} />
+                <Button size="sm" onPress={() => router.push("/editArticle?id=" + id)}>
+                    Edit
+                </Button>
+                <Spacer y={.5} />
+                <Button size="sm" color="error" onPress={() => deleteArticle()}>
+                    Delete
+                </Button>
+            </>
+            : null}
+            <Spacer y={3} />
+            <CommentCard />
         </Box>
     )
 }

@@ -25,7 +25,6 @@ const CommentCard = () => {
             .from("comments")
             .select("*")
             .filter("post_id", "eq", id)
-            .limit(5)
             if (error) {
                 setError(error.message)
             } else {
@@ -37,11 +36,11 @@ const CommentCard = () => {
         }
     },[id, comments])
 
-    const intitialState = {
+    const intitialCommentState = {
         comment: ""
     }
 
-    const [commentData, setCommentData] = useState(intitialState)
+    const [commentData, setCommentData] = useState(intitialCommentState)
 
     const handleCommentChange = (e: any) => {
         setCommentData({...commentData, [e.target.name] : e.target.value})
@@ -58,8 +57,7 @@ const CommentCard = () => {
                 })
                 .single()
             if (error) setError(error)
-            router.reload()
-            setCommentData(intitialState)
+            setCommentData(intitialCommentState)
         } catch(error:any) {
            setError(error.message)
         } 
@@ -84,7 +82,7 @@ const CommentCard = () => {
             <Spacer y={1} />
             <Grid.Container gap={2}>
                 {comments.map((c: any) => (
-                    <Grid xs={12} key={c.id}>
+                    <Grid xs={4} key={c.id}>
                         <Card css={{ mw: "400px" }}>
                             <Card.Header>
                             <User
@@ -118,6 +116,7 @@ const CommentCard = () => {
                         rows={1}
                         size="xl"
                         onChange={handleCommentChange}
+                        value={commentData.comment}
                         />
                     </Grid>
                 {commentData.comment && <Button onPress={createComment}>Post Comment</Button>}

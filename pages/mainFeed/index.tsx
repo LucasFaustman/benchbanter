@@ -38,8 +38,8 @@ const Mainfeed: NextPage = () => {
             <Text size="$lg" css={{my: "$8"}}>
                 Check out articles here
             </Text>
-            {articles.map((article) => (
-                <ArticleCard article={article} />
+            {articles.map((article,i) => (
+                <ArticleCard key={i} article={article} />
             ))}
         </Box>
     )

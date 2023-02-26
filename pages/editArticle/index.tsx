@@ -42,7 +42,7 @@ const EditArticle: NextPage = () => {
         if (typeof id !== undefined) {
             getArticle()
         }
-    },[id, articleData])
+    },[id, articleData, supabaseClient])
 
 
     

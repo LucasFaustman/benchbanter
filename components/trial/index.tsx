@@ -23,7 +23,7 @@ export const Trial = () => {
                   textAlign: 'center',
                }}
             >
-               Sign up today to join FreeWrites and explore the world of online articles! Click here to get started.
+               Join BenchBanter today and start sharing your unique perspective with our community of sports writers! Sign up now to publish your articles and engage with other passionate fans. Click here to get started.
             </Text>
 
             <Link href="/login"><Button>Sign Up</Button></Link>

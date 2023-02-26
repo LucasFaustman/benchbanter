@@ -43,7 +43,7 @@ export const Hero = () => {
                         display: 'inline',
                      }}
                   >
-                     Connect with the World's Best Writers - {' '}
+                     Join the Ultimate Sports Discussion Platform - {' '}
                   </Text>
                   <Text
                      h1
@@ -59,7 +59,7 @@ export const Hero = () => {
                      }}
                      color="primary"
                   >
-                     Share Your Ideas on FreeWrites!
+                     Welcome to BenchBanter!
                   </Text>
                </Box>
 
@@ -71,7 +71,7 @@ export const Hero = () => {
                   size={'$lg'}
                   span
                >
-                  The easiest platform to connect you with amazing articles around the world. Connect, read, and like articles.
+                  Connect with the most passionate sports fans around the world and join in on the lively debate. From game highlights to player analysis, BenchBanter is the go-to place to share your opinions and knowledge. Explore, discuss, and engage with the best sports content on the web.
                </Text>
 
                <Flex
@@ -109,7 +109,7 @@ export const Hero = () => {
                         alignItems: 'center',
                      }}
                   >
-                     <CheckIcon /> Connect with other writers.
+                     <CheckIcon /> Connect with other sports fans.
                   </Flex>
                   <Flex
                      css={{
@@ -117,7 +117,7 @@ export const Hero = () => {
                         alignItems: 'center',
                      }}
                   >
-                     <CheckIcon /> Post your stories.
+                     <CheckIcon /> Post your articles.
                   </Flex>
                </Flex>
             </Box>

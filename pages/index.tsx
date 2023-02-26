@@ -1,5 +1,4 @@
 import type {NextPage} from 'next';
-import {Nav} from '../components/navbar/navbar';
 import {Layout} from '../components/navbar/layout';
 import {Hero} from '../components/hero';
 import {Trusted} from '../components/trusted';

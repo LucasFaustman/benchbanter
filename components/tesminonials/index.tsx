@@ -43,7 +43,7 @@ export const Testimonials = () => {
                                  color: '$accents8',
                               }}
                            >
-                              "I love FreeWrites for the amazing content it provides. There's something for everyone and it's a great way to discover new topics. The articles are well-written and I'm always learning something new." 
+                              "BenchBanter is a fantastic resource for sports writers. The content is diverse and engaging, with something for everyone. The articles are well-written and informative, and I always come away with new insights and ideas for my own work."
                            </Text>
                            <Text
                               span
@@ -63,7 +63,7 @@ export const Testimonials = () => {
                                  color: '$accents8',
                               }}
                            >
-                              - CEO at Company
+                              - Sports Writer
                            </Text>
                         </Flex>
                      </Flex>
@@ -87,7 +87,7 @@ export const Testimonials = () => {
                                  color: '$accents8',
                               }}
                            >
-                              "I'm so glad I discovered FreeWrites. With its wide range of topics, I'm never bored. I come here to read articles every day and I'm always impressed with the quality of the writing. Highly recommend!"
+                              "I'm so grateful to have discovered BenchBanter. As a sports writer, I need reliable sources of information and inspiration, and this site delivers both. The articles are consistently high-quality, and I appreciate the wide range of topics covered."
                            </Text>
                            <Text
                               span
@@ -107,7 +107,7 @@ export const Testimonials = () => {
                                  color: '$accents8',
                               }}
                            >
-                              - CEO at Company
+                              - Sports Writer
                            </Text>
                         </Flex>
                      </Flex>
@@ -131,7 +131,7 @@ export const Testimonials = () => {
                                  color: '$accents8',
                               }}
                            >
-                              "FreeWrites is the perfect place to find great content. I've been using it for years and I'm consistently impressed with the level of insight and knowledge I find here. Highly recommend!"
+                              "I highly recommend BenchBanter to any sports writer looking for fresh perspectives and insights. The articles are thought-provoking and well-researched, and the site is user-friendly and easy to navigate. I've been using it for years and always find something new to learn."
                            </Text>
                            <Text
                               span
@@ -151,7 +151,7 @@ export const Testimonials = () => {
                                  color: '$accents8',
                               }}
                            >
-                              - CEO at Company
+                              - Writer at Sportsnet
                            </Text>
                         </Flex>
                      </Flex>
@@ -173,7 +173,7 @@ export const Testimonials = () => {
                </Text>
                <Text h3>Testimonials</Text>
                <Text span css={{color: '$accents8', maxW: '600px', pb: '$8'}}>
-                  See Why Readers and Writers Love FreeWrites
+                  See Why Sports Readers and Writers Love BenchBanter
                </Text>
                <Link href='/login'><Button>Sign Up Now</Button></Link>
             </Flex>

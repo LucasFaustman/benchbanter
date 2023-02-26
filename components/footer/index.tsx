@@ -60,7 +60,7 @@ export const Footer = () => {
                      }}
                   >
                      <Text span css={{color: '$accents8'}}>
-                        © Copyright 2023 FreeWrites Inc.
+                        © Copyright 2023 BenchBanter Inc.
                      </Text>
                   </Flex>
                </Flex>

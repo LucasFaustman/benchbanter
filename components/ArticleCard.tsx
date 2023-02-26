@@ -16,9 +16,11 @@ const ArticleCard: NextPage<Props> = (props) => {
 
     function getDate() {
         let time = Date.parse(article.inserted_at);
-        let date = new Date(time);
-
-        return date.getDay() + '-' + date.getMonth() + '-' + date.getFullYear();
+  let date = new Date(time);
+  let day = date.getDate().toString().padStart(2, "0");
+  let month = (date.getMonth() + 1).toString().padStart(2, "0");
+  let year = date.getFullYear().toString();
+  return `${month}-${day}-${year}`;
     }
     return (
 

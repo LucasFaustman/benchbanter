@@ -1,17 +1,19 @@
-# FreeWrites - Online Article Sharing Platform
+# BenchBanter - Online Sports Article Sharing Platform
 
-Post your written articles and connect with other writers!
+Join the Ultimate Sports Discussion Platform - Welcome to BenchBanter!
 
 Link to project: https://freewrites.onrender.com/
 
-<img src="https://media.giphy.com/media/HmZZ0B3Io0lIMLva17/giphy.gif" alt="free-writes overview" height="100%" />
+<img src="https://media.giphy.com/media/HmZZ0B3Io0lIMLva17/giphy.gif" alt="benchbanter overview" height="100%" />
 
 ## How It's Made:
 
 **Tech used:**
 Tech used: Nest.js, PostgreSQL through Supabase, Next UI, TypeScript
 
-In this project, I wanted to practice my skills with TypeScript, Next.js, and PostgreSQL. I've always loved blogging, so I thought a simple online article sharing app would be a project to practice on!
+In this project, I wanted to practice my skills with TypeScript, Next.js, and PostgreSQL. I've always loved sports blogging, but when I used to sports blog, I was always intimidated that others would hate on me for my sports opinions!
+
+BenchBanter is a safe online community for users to post sports articles, add comments, and connect with other sports writers.
 
 ## Optimizations
 

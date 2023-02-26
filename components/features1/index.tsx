@@ -28,9 +28,9 @@ export const Features1 = () => {
          >
             <Flex direction="column">
                <Text span css={{color: '$blue600'}}>
-                  Storytelling for writers, by writers.
+                  Sports Blogging Made Easy with BenchBanter
                </Text>
-               <Text h3>Storytelling Format</Text>
+               <Text h3>Storytelling Made Simple</Text>
                <Text
                   span
                   css={{
@@ -38,7 +38,7 @@ export const Features1 = () => {
                      color: '$accents8',
                   }}
                >
-                  FreeWrites offers a unique storytelling format which allows writers to craft their stories and engage readers on a deeper level.
+                  BenchBanter's easy-to-use blogging platform empowers sports writers to tell their stories in a compelling and engaging way.
                </Text>
 
                <Flex
@@ -50,7 +50,7 @@ export const Features1 = () => {
                   <BoxIcon />
                   <Flex direction={'column'}>
                      <Text h4 weight={'medium'}>
-                     Publication Feature
+                     Publication Made Simple
                      </Text>
                      <Text
                         span
@@ -59,7 +59,7 @@ export const Features1 = () => {
                            color: '$accents8',
                         }}
                      >
-                      FreeWrites allows users to easily publish their own articles to reach an audience.
+                      With BenchBanter, publishing your own sports articles has never been easier. Share your insights and opinions with a passionate community of sports fans.
                      </Text>
                   </Flex>
                </Flex>
@@ -72,7 +72,7 @@ export const Features1 = () => {
                   <BoxIcon />
                   <Flex direction={'column'}>
                      <Text h4 weight={'medium'}>
-                     Responsive Design
+                     Mobile-Optimized Design
                      </Text>
                      <Text
                         span
@@ -81,7 +81,7 @@ export const Features1 = () => {
                            color: '$accents8',
                         }}
                      >
-                        FreeWrites platform is designed with a responsive, mobile-friendly layout that allows readers to easily access articles from any device.
+                        BenchBanter's mobile-optimized design ensures that sports fans can access and read your articles anytime, anywhere, on any device.
                      </Text>
                   </Flex>
                </Flex>
@@ -94,7 +94,7 @@ export const Features1 = () => {
                   <BoxIcon />
                   <Flex direction={'column'}>
                      <Text h4 weight={'medium'}>
-                     Community Engagement
+                     Community-Driven Engagement
                      </Text>
                      <Text
                         span
@@ -103,7 +103,7 @@ export const Features1 = () => {
                            color: '$accents8',
                         }}
                      >
-                     FreeWrites encourages community engagement by allowing readers to comment and recommend articles.
+                     Join a community of passionate sports fans and engage with like-minded individuals who share your passion for sports. Get feedback on your writing, share your thoughts on the latest games, and join the conversation on BenchBanter.
                      </Text>
                   </Flex>
                </Flex>

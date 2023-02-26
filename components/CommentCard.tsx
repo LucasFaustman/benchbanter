@@ -76,52 +76,54 @@ const CommentCard = () => {
     }
     return (
         <Grid.Container gap={2}>
-            <Text h3>Comments</Text>
-            <Spacer y={1} />
-            <Grid.Container gap={2}>
-                {comments.map((c: any) => (
-                    <Grid xs={4} key={c.id}>
-                        <Card css={{ mw: "400px" }}>
-                            <Card.Header>
-                            <User
-                                name={c.user_email?.toLowerCase()}
-                                size="sm"
-                                />
-                            </Card.Header>
-                            <Card.Body>
-                                <Text>{c.body}</Text>
-                            </Card.Body>
-                            <Card.Footer>
-                            {user && c.user_id === user.id ?
-                                <Button shadow color="error" auto onPress={() => deleteComment(c.id)}>
-                                    Delete
-                                </Button>
-                                : null}
-                            </Card.Footer>
-                        </Card>
-                    </Grid>
-
-                ))}
+          <Text h3>Comments</Text>
+          <Spacer y={1} />
+          <Grid.Container gap={2}>
+            {comments.map((c: any) => (
+              <Grid xs={12} key={c.id} style={{ padding: "10px", margin: "10px auto" }}>
+                <Card>
+                  <Card.Header>
+                    <User name={c.user_email?.toLowerCase()} size="sm" />
+                  </Card.Header>
+                  <Card.Body>
+                    {c.body}
+                  </Card.Body>
+                  <Card.Footer>
+                    {user && c.user_id === user.id ? (
+                      <Button shadow color="error" auto onPress={() => deleteComment(c.id)}>
+                        Delete
+                      </Button>
+                    ) : null}
+                  </Card.Footer>
+                </Card>
+              </Grid>
+            ))}
+          </Grid.Container>
+          {user && (
+            <Grid.Container>
+              <Text h5>Post a Comment</Text>
+              <Grid xs={12}>
+                <Textarea
+                  name="comment"
+                  aria-label="comment"
+                  placeholder="Comment..."
+                  fullWidth={true}
+                  rows={1}
+                  size="md"
+                  onChange={handleCommentChange}
+                  value={commentData.comment}
+                />
+              </Grid>
+              {commentData.comment && (
+                <Button onPress={createComment} style={{ margin: "10px auto" }}>
+                  Post Comment
+                </Button>
+              )}
+              {error && <Text>{error}</Text>}
             </Grid.Container>
-            {user && <Grid.Container>
-                <Text h5>Post a Comment</Text>
-                    <Grid xs={12}>
-                        <Textarea 
-                        name="comment" 
-                        aria-label="comment"
-                        placeholder="Comment..."
-                        fullWidth={true}
-                        rows={1}
-                        size="xl"
-                        onChange={handleCommentChange}
-                        value={commentData.comment}
-                        />
-                    </Grid>
-                {commentData.comment && <Button onPress={createComment}>Post Comment</Button>}
-                        {error && <Text>{error}</Text>}
-            </Grid.Container>}
-      </Grid.Container>
-    )
+          )}
+        </Grid.Container>
+      );
 }
 
 export default CommentCard

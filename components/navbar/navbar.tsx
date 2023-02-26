@@ -2,7 +2,7 @@ import { useUser, useSupabaseClient } from "@supabase/auth-helpers-react"
 import { useRouter } from "next/router";
 import { Navbar, Button, Text } from "@nextui-org/react";
 import Link from "next/link";
-// import { supabase } from "@supabase/auth-ui-react/dist/esm/common/theming";
+ import { supabase } from "@supabase/auth-ui-react/dist/esm/common/theming";
 
 const NavbarComponent = () => {
     const supabaseClient = useSupabaseClient();

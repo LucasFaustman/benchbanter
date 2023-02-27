@@ -6,7 +6,7 @@ import { NextUIProvider } from '@nextui-org/react'
 //Provider (providing supabase, nextui provider)
 import { Box } from '../components/box'
 //Navbar
-import NavbarComponent from '../components/navbar/Navbar'
+import NavbarComponent from '../components/navbar/NavbarComponent'
 //Box component for content
 
 

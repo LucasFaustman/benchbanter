@@ -4,7 +4,7 @@ Join the Ultimate Sports Discussion Platform - Welcome to BenchBanter!
 
 Link to project: https://benchbanter.onrender.com/
 
-<img src="https://media.giphy.com/media/HmZZ0B3Io0lIMLva17/giphy.gif" alt="benchbanter overview" height="100%" />
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmQ0ZmE5YTg4MjVjZDEwODNhZGI5ZTkxYWRjOWIyNmMzZDFkODJhNiZjdD1n/yshTzIzJKPLBAoen8p/giphy.gif" alt="benchbanter overview" height="100%" />
 
 ## How It's Made:
 

@@ -2,7 +2,7 @@
 
 Join the Ultimate Sports Discussion Platform - Welcome to BenchBanter!
 
-Link to project: https://freewrites.onrender.com/
+Link to project: https://benchbanter.onrender.com/
 
 <img src="https://media.giphy.com/media/HmZZ0B3Io0lIMLva17/giphy.gif" alt="benchbanter overview" height="100%" />
 

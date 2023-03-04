@@ -17,8 +17,6 @@ BenchBanter is a safe online community for users to post sports articles, add co
 
 ## Optimizations
 
-- Add pagination
-
 - Add thumbs up feature to articles and comments for users to vote on their favourite articles
 
 - Add a trending section for popular articles

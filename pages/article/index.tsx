@@ -57,7 +57,10 @@ const Article: NextPage = () => {
                 />
             <Spacer y={1} />
             <Text>
-                {article.content}
+                {article.content && article.content.split('\n').map((paragraph: string) => (
+                        <p style={{ marginBottom: '1rem' }}>{paragraph}</p>
+   
+                ))}
             </Text>
             {user && article.user_id === user.id ?
             <>

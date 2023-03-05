@@ -78,15 +78,23 @@ const Article: NextPage = () => {
 
             <Text h2>{article.title}</Text>
             <Spacer y={.5}/>
-            <User
-                name={article.user_email?.toLowerCase()}
-                size="md"
-                />
-            <Spacer y={1} />
-            <Box>
-                <p>Likes: {likes}</p>
-                {user && <Button onPress={() => upVoteLikes()} color="success" auto>Upvote</Button>}
-            </Box>
+            <Box css={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+  <Box css={{ display: 'flex', alignItems: 'center' }}>
+    <User name={article.user_email?.toLowerCase()} size="md" />
+  </Box>
+  <Box css={{ display: 'flex', alignItems: 'center' }}>
+    <Box css={{ marginRight: '$2' }}>
+      <p>Likes: {likes}</p>
+    </Box>
+    {user && (
+      <Button onPress={() => upVoteLikes()} color="success" auto>
+        Like
+      </Button>
+    )}
+  </Box>
+</Box>
+<Spacer y={.5} />
+
             <Text>
                 {article.content.split('\n').map((paragraph: string, index: number) => (
                         <p key={index} style={{ marginBottom: '1rem' }}>{paragraph}</p>

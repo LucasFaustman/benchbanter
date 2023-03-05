@@ -16,11 +16,11 @@ const ArticleCard: NextPage<Props> = (props) => {
 
     function getDate() {
         let time = Date.parse(article.inserted_at);
-  let date = new Date(time);
-  let day = date.getDate().toString().padStart(2, "0");
-  let month = (date.getMonth() + 1).toString().padStart(2, "0");
-  let year = date.getFullYear().toString();
-  return `${month}-${day}-${year}`;
+        let date = new Date(time);
+        let day = date.getDate().toString().padStart(2, "0");
+        let month = (date.getMonth() + 1).toString().padStart(2, "0");
+        let year = date.getFullYear().toString();
+            return `${month}-${day}-${year}`;
     }
     return (
 
@@ -34,6 +34,7 @@ const ArticleCard: NextPage<Props> = (props) => {
                 <Text h2>{article.title}</Text>
                 <Text b>Posted {getDate()}</Text>
                 <Text>By: {article.user_email}</Text>
+                <Text>Likes: {article.likes}</Text>
             </Card.Body>
         </Card>
     )

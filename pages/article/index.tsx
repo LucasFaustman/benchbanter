@@ -12,6 +12,7 @@ const Article: NextPage = () => {
     const user = useUser()
     const router = useRouter() //use supabase throughout components
     const [article,setArticle] = useState<any>({})
+    const [likes,setLikes] = useState<number>(0)
 
     const { id } = router.query
 
@@ -27,12 +28,13 @@ const Article: NextPage = () => {
                 console.log(error)
             } else {
                 setArticle(data)
+                setLikes(data.likes)
             }
         }
         if (typeof id !== undefined) {
             getArticle()
         }
-    },[id,article, supabaseClient])
+    },[id, supabaseClient])
 
     const deleteArticle = async () => {
         try {
@@ -46,7 +48,33 @@ const Article: NextPage = () => {
             alert(error.message)
         }
     }
+
+    const upVoteLikes = async () => {
+        try {
+          const { data, error } = await supabaseClient
+            .from("articles")
+            .update({
+              likes: likes + 1
+            })
+            .eq("id", id);
+          setLikes(prevLikes => prevLikes + 1)
+          if (error) throw error;
+          router.push("/article?id=" + id);
+        } catch (error: any) {
+          alert(error.message);
+        }
+      };
+      
+      
+      
+      
+      
+      
+      
+      
     return (
+        <>
+        {Object.keys(article).length > 0 && (
         <Box key={article.id} css={{ px: "$12", py: "$15", mt: "$12", "@xsMax": {px: "$10"}, maxWidth: "800px", margin: "0 auto" }}>
 
             <Text h2>{article.title}</Text>
@@ -56,10 +84,13 @@ const Article: NextPage = () => {
                 size="md"
                 />
             <Spacer y={1} />
+            <Box>
+                <p>Likes: {likes}</p>
+                {user && <Button onPress={() => upVoteLikes()} color="success" auto>Upvote</Button>}
+            </Box>
             <Text>
-                {article.content && article.content.split('\n').map((paragraph: string) => (
+                {article.content.split('\n').map((paragraph: string) => (
                         <p style={{ marginBottom: '1rem' }}>{paragraph}</p>
-   
                 ))}
             </Text>
             {user && article.user_id === user.id ?
@@ -77,6 +108,8 @@ const Article: NextPage = () => {
             <Spacer y={3} />
             <CommentCard />
         </Box>
+        )}
+        </>
     )
 }
 

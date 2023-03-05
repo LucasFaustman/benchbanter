@@ -59,7 +59,6 @@ const Article: NextPage = () => {
             .eq("id", id);
           setLikes(prevLikes => prevLikes + 1)
           if (error) throw error;
-          router.push("/article?id=" + id);
         } catch (error: any) {
           alert(error.message);
         }

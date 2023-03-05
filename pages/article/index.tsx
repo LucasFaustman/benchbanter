@@ -89,8 +89,8 @@ const Article: NextPage = () => {
                 {user && <Button onPress={() => upVoteLikes()} color="success" auto>Upvote</Button>}
             </Box>
             <Text>
-                {article.content.split('\n').map((paragraph: string) => (
-                        <p style={{ marginBottom: '1rem' }}>{paragraph}</p>
+                {article.content.split('\n').map((paragraph: string, index: number) => (
+                        <p key={index} style={{ marginBottom: '1rem' }}>{paragraph}</p>
                 ))}
             </Text>
             {user && article.user_id === user.id ?

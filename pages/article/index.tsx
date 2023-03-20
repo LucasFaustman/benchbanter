@@ -79,7 +79,7 @@ const Article: NextPage = () => {
             <Text h2>{article.title}</Text>
             <Spacer y={.5}/>
             <Box css={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-  <Box css={{ display: 'flex', alignItems: 'center' }}>
+  <Box css={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }} onClick={() => router.push("/profile?id=" + article.user_id)}>
     <User name={article.user_email?.toLowerCase()} size="md" />
   </Box>
   <Box css={{ display: 'flex', alignItems: 'center' }}>
